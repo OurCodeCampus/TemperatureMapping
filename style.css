@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #eee;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.tem-container{
+    max-width: 60rem;
+    background-color: #fff;
+    padding: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem -0.6rem  rgba(0, 0, 0, 0.3);
+    transition: 0.3s linear;
+}
+
+.temp-heading{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+    /* text-decoration: underline; */
+    color: green;
+}
+
+form{
+    margin-top: 3rem;
+    text-align: center;
+    /* max-width: 40rem; */
+}
+
+.form-controls{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+
+input{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: 2px solid gray;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    text-align: center;
+    outline: none;
+    transition: 0.3s linear;
+}
+input:focus{
+    box-shadow: 0 0 1rem 0rem rgb(8, 165, 228);
+    border: 2px solid rgb(8, 165, 228);
+}
+
+select{
+    width: 100%;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid gray;
+    outline: none;
+    text-align: center;
+    transition: 0.3s linear;
+}
+select:focus{
+    box-shadow: 0 0 1rem 0rem rgb(8, 165, 228);
+    border: 2px solid rgb(8, 165, 228);
+}
+
+.btn{
+    margin-top: 3rem;
+    padding: 0.8rem 3.5rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: rgb(8, 165, 228);
+    color: #fff;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.btn:hover{
+    transform: scale(1.1,1.1);
+}
+
+.result-container{
+    margin-top: 4rem;
+    text-align: center;
+}
+#result{
+    font-size: 3rem;
+    color: green;
+    font-weight: 600;
+}

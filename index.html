@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Map</title>
+    <meta name="author" content="suraj kumar">
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div class="tem-container">
+        <h3 class="temp-heading">Please enter the temperature you'd like to convert.</h3>
+        <form onsubmit="calculateTemp(); return false">
+            <div class="form-controls">
+                <input type="number" placeholder="0" id="temp-value" name="temp-value">
+                <select name="temp-list" id="temp-list">
+                    <option value="cel">°Celsius</option>
+                    <option value="fah">°Fahrenheit</option>
+                </select>
+                
+            </div>
+            <div>
+                <button type="submit" class="btn">Convert</button>
+            </div>
+            <div class="result-container">
+                <span id="result"></span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
